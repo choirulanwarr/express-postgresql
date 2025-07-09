@@ -1,0 +1,16 @@
+{
+  "name": "express-postgresql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "choirulanwarl",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.1.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "pg": "^8.16.3"
+  }
+}
