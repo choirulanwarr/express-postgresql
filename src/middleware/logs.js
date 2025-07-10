@@ -1,6 +1,8 @@
-const logRequest = (req, res, next) => {
-    console.log('Request to PATH', req.path);
+const InboundLogger = (req, res, next) => {
+    const { method, url } = req;
+    const timestamp = new Date().toISOString();
+    console.log(`[${timestamp}] ${method} ${url}`);
     next();
 }
 
-module.exports = logRequest;
+module.exports = InboundLogger;
